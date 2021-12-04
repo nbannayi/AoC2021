@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Seq.fs" />
+    <Compile Include="String.fs" />
+    <Compile Include="Maths.fs" />
+    <Compile Include="Timer.fs" />
+    <Compile Include="Stack.fs" />
+    <Compile Include="Char.fs" />
+  </ItemGroup>
+</Project>

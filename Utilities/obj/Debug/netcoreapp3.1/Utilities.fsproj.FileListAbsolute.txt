@@ -1,0 +1,7 @@
+/Users/Nick/development/workspace/AoC2021/Utilities/bin/Debug/netcoreapp3.1/Utilities.deps.json
+/Users/Nick/development/workspace/AoC2021/Utilities/bin/Debug/netcoreapp3.1/Utilities.dll
+/Users/Nick/development/workspace/AoC2021/Utilities/bin/Debug/netcoreapp3.1/Utilities.pdb
+/Users/Nick/development/workspace/AoC2021/Utilities/obj/Debug/netcoreapp3.1/Utilities.AssemblyInfoInputs.cache
+/Users/Nick/development/workspace/AoC2021/Utilities/obj/Debug/netcoreapp3.1/Utilities.AssemblyInfo.fs
+/Users/Nick/development/workspace/AoC2021/Utilities/obj/Debug/netcoreapp3.1/Utilities.dll
+/Users/Nick/development/workspace/AoC2021/Utilities/obj/Debug/netcoreapp3.1/Utilities.pdb
