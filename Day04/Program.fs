@@ -32,7 +32,7 @@ let main _argv =
         |> Seq.map (BingoGame.create)
         |> Array.ofSeq
 
-    // For each bingo number, checked each bingo game for the number and update accordingly in the array.
+    // For each bingo number, check each bingo game for the number and update accordingly in the array.
     // Finally, sort array by the completed time stamp so we can find the winner and loser of all games.
     let completedBingoGames =
         (bingoGames, bingoNumbers)

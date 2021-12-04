@@ -48,7 +48,7 @@ module BingoBoard =
            printfn ""
 
     /// Return true if at least one horizontal or vertical line is checked off.
-    /// Resturns false otherwise.
+    /// Returns false otherwise.
     let isBoardCompleted (board: BingoBoard) =
 
         let isRowCompleted row (board: BingoBoard) =
