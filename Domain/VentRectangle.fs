@@ -4,11 +4,7 @@
 
 /// Type to represent a rectangle that will hold a specified set of vent lines.
 type VentRectangle =
-    {
-        Grid: int[,]
-    }
 
-    /// Create vent rectangle that can hold given vent lines.
     static member create ventLines =
         let width, height =
             ventLines |> Seq.maxBy (fun vl -> (vl |> VentLine.areaCovered) |> fst) |> VentLine.areaCovered |> fst,

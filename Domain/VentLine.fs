@@ -10,7 +10,7 @@ type VentPoint = { X: int; Y: int }
 /// Types of Vent line available.
 type VentLineType = Horizontal | Vertical | Diagonal | DiagonalNot45Degrees
 
-/// Type to represent a ventline composed of vent ponts.
+/// Type to represent a ventline composed of vent points.
 type VentLine =
     {
         EndPoint1: VentPoint;
