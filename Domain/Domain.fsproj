@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Include="BingoBoard.fs" />
     <Compile Include="BingoGame.fs" />
+    <Compile Include="VentLine.fs" />
+    <Compile Include="VentRectangle.fs" />
   </ItemGroup>
 
 </Project>
