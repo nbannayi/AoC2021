@@ -9,5 +9,9 @@
     <Compile Include="VentRectangle.fs" />
     <Compile Include="Segment.fs" />
     <Compile Include="SegmentDisplay.fs" />
+    <Compile Include="HeightMap.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Utilities\Utilities.fsproj" />
   </ItemGroup>
 </Project>
