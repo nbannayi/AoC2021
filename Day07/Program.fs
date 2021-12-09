@@ -17,7 +17,8 @@ let main _argv =
         Math.Abs(c1-c2)
 
     let crabFuelCalculator2 (c1: int) (c2: int) =
-        [1..Math.Abs(c1-c2)] |> List.sum
+        [1..Math.Abs(c1-c2)]
+        |> List.sum
 
     let getCrabFuelRequirements crabs crabFuelCalculator =
         [|for c1 in crabs |> Array.distinct do
