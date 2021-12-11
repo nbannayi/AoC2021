@@ -10,6 +10,8 @@
     <Compile Include="Segment.fs" />
     <Compile Include="SegmentDisplay.fs" />
     <Compile Include="HeightMap.fs" />
+    <Compile Include="DumboOctopus.fs" />
+    <Compile Include="DumboOctopusGrid.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.fsproj" />

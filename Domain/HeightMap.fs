@@ -1,6 +1,6 @@
 ﻿namespace AoC2021.Domain
 
-// Height map module module for AoC 2021 day 9.
+// Height map module for AoC 2021 day 9.
 
 open AoC2021.Utilities
 
@@ -20,7 +20,7 @@ type HeightPoint =
     {
         Value    : int 
         Type     : HeightPointType
-        Position : int * int 
+        Position : int * int // row, col.
     }
 
     static member init =

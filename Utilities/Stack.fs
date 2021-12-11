@@ -1,7 +1,6 @@
 ﻿namespace AoC2021.Utilities
 
-// A simple Stack module for AoC 2020 day 18.
-
+// A simple general purpose Stack.
 module Stack =
 
     type Stack<'T> = StackContents of 'T list
