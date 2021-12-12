@@ -11,5 +11,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.fsproj" />
+    <ProjectReference Include="..\Domain\Domain.fsproj" />
   </ItemGroup>
 </Project>

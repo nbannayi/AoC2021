@@ -21,7 +21,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InputFiles", "InputFiles", 
 		InputFiles\Day10Input.txt = InputFiles\Day10Input.txt
 		InputFiles\Day10ExampleInput.txt = InputFiles\Day10ExampleInput.txt
 		InputFiles\Day11Input.txt = InputFiles\Day11Input.txt
-		InputFiles\Day11ExampleInput.txt = InputFiles\Day11ExampleInput.txt
 	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day02", "Day02\Day02.fsproj", "{01BFD868-2AF0-452C-B794-B88EC6BE6E0B}"

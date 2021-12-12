@@ -32,7 +32,7 @@ type DumboOctopus =
 
 module DumboOctopus =
 
-    /// Rests eneryy level and flash status.
+    /// Resets energy level and flash status.
     let reset dumboOctopus =
         let energyLevel = dumboOctopus.EnergyLevel
         {

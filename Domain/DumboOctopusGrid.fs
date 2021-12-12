@@ -4,7 +4,7 @@
 
 open AoC2021.Utilities
 
-/// Repreents a rectangular grid of Dumbo octopuses.
+/// Represents a rectangular grid of Dumbo octopuses.
 type DumboOctopusGrid =
     {
         Grid : DumboOctopus [,]

@@ -12,6 +12,8 @@
     <Compile Include="HeightMap.fs" />
     <Compile Include="DumboOctopus.fs" />
     <Compile Include="DumboOctopusGrid.fs" />
+    <Compile Include="SyntaxSymbol.fs" />
+    <Compile Include="SyntaxSymbolList.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.fsproj" />

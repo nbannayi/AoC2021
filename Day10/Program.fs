@@ -1,36 +1,35 @@
 ﻿open AoC2021.Utilities
+open AoC2021.Domain
 
 // Advent of Code 2021 day 10.
-// TODO: Incomplete!
 
 [<EntryPoint>]
 let main _argv =    
 
-    let syntaxLines =        
-        "InputFiles/Day10ExampleInput.txt"
+    let syntaxLists =        
+        "InputFiles/Day10Input.txt"
         |> Seq.ofFileLines
+        |> Seq.map (SyntaxSymbolList.create)
+        |> List.ofSeq
 
-    let openingBrackets = [|'(';'[';'{';'<'|]
-    let closingBrackets = [|')';']';'}';'>'|]
-    
-    let inputStack = Stack.empty
-    let inputStack' = inputStack |> Stack.push 'a'
+    let sumOfInvalidSymbolScores =
+        syntaxLists
+        |> List.map (fun sl -> SyntaxSymbolList.findInvalidSymbol sl)
+        |> List.choose (fun sl -> sl)
+        |> List.map (SyntaxSymbol.getInvalidScore)
+        |> List.sum
 
-    let syntaxLine = "[({(<(())[]>[[{[]{<()<>>"
-    (*
-    let parseSyntaxSymbol stack symbol =
-        let stack' = stack |> Stack.push symbol
+    printfn "Part 1: result is %d" sumOfInvalidSymbolScores
 
-        let symbolTop, symbol2ndToTop =
-            stack' |> Stack.peek, stack' |> Stack.peekPrevious
-
-        match symbolTop, symbol2ndToTop with
-        | '(',')' |  -> stack' |> Stack.pop |> snd |> Stack.pop |> snd            
-        0
-    *)
-    let parseSyntaxLine syntaxLine =
-        let evaluateStack = Stack.empty
-        syntaxLine |> Array.iter 
-
-    syntaxLine |> Seq.iter (printfn "%A")
-    0 // return an integer exit code
+    let middleCompletionScore = 
+        let sortedCompletiomScores =
+            syntaxLists
+            |> List.filter (SyntaxSymbolList.isCorrupted >> not)
+            |> List.map (fun sl -> SyntaxSymbolList.findCompletionSymbols sl)
+            |> List.map (fun cs -> SyntaxSymbolList.getCompletionScore cs)
+            |> Array.ofList
+            |> Array.sort
+        in sortedCompletiomScores.[(sortedCompletiomScores.Length-1)/2]
+        
+    printfn "Part 2: result is %d" middleCompletionScore
+    0 
