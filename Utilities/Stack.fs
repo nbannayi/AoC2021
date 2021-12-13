@@ -1,9 +1,9 @@
 ﻿namespace AoC2021.Utilities
 
-// A simple general purpose Stack.
-module Stack =
+/// General purpose Stack.
+type Stack<'T> = StackContents of 'T list
 
-    type Stack<'T> = StackContents of 'T list
+module Stack =
 
     let empty = StackContents []
    

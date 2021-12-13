@@ -1,5 +1,7 @@
 ﻿namespace AoC2021.Utilities
 
+open System
+
 module String =
 
     /// Converts a string to a sequence of char.
@@ -19,3 +21,13 @@ module String =
         str
         |> Seq.map (string)
         |> Seq.map (fun c -> int c)
+
+    /// Returns true if every character in string is upper case, false otherwise.
+    let isFullyUpperCase (str: string) : bool =
+        str |>
+        Seq.forall (Char.IsUpper)
+
+    /// Returns true if every character in string is lower case, false otherwise.
+    let isFullyLowerCase (str: string) : bool =
+        str |>
+        Seq.forall (Char.IsLower)  

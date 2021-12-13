@@ -14,6 +14,7 @@
     <Compile Include="DumboOctopusGrid.fs" />
     <Compile Include="SyntaxSymbol.fs" />
     <Compile Include="SyntaxSymbolList.fs" />
+    <Compile Include="CaveSystem.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.fsproj" />
