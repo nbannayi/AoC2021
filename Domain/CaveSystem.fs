@@ -1,6 +1,6 @@
 ﻿namespace AoC2021.Domain
 
-// Cave system module for AoC 2021 day 10.
+// Cave system module for AoC 2021 day 12.
 
 open AoC2021.Utilities
 

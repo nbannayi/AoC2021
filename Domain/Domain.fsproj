@@ -15,6 +15,7 @@
     <Compile Include="SyntaxSymbol.fs" />
     <Compile Include="SyntaxSymbolList.fs" />
     <Compile Include="CaveSystem.fs" />
+    <Compile Include="TransparentPaper.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Utilities\Utilities.fsproj" />
